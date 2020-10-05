@@ -3,9 +3,9 @@
     { "title": "Car", "budget": 250 },
     { "title": "House", "budget": 2500 },
     { "title": "Grocery", "budget": 350 },
-    { "title": "Roth_IRA", "budget": 170 },
-    { "title": "401(k)", "budget": 500 },
-    { "title": "SMALL_CAP_STOCKS", "budget": 500 },
-    { "title": "FOREX", "budget": 200 }
+    { "title": "IRA", "budget": 250 },
+    { "title": "SMALL_STOCK", "budget": 150 },
+    { "title": "MEDIUM_CAP", "budget": 100 },
+    { "title": "FOREX", "budget": 75 }
   ]
 }
