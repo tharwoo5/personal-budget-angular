@@ -31,8 +31,8 @@ export class HomepageComponent implements OnInit {
         for (let i = 0; i < res.myBudget.length; i++) {
           this.dataSource.datasets[0].data[i] = res.myBudget[i].budget;
           this.dataSource.labels[i] = res.myBudget[i].title;
-          this.createChart();
         }
+        this.createChart();
       });
   }
 
