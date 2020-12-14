@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '@auth0/auth0-angular';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @Component({
   selector: 'pb-menu',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  profileJson: string = null;
+
+  constructor(public auth: AuthService) { }
 
   ngOnInit(): void {
+
   }
 
 }

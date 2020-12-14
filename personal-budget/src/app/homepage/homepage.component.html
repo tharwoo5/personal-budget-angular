@@ -1,9 +1,8 @@
+<pb-menu></pb-menu>
 <main class="center" id="main">
-  <pb-breadcrumbs>
-    breadcrumbs component
-  </pb-breadcrumbs>
   <div class="page-area">
-    <pb-article color="blue">
+
+    <!-- <pb-article color="blue">
       <h1>Stay on track</h1>
       <div>
         Do you know where you are spending your money? If you really stop to
@@ -60,13 +59,58 @@
         without guilt or fear... because they know it is all good and accounted
         for.
       </div>
-    </pb-article>
+    </pb-article> -->
+
+    <div>
+      <button mat-raised-button (click)="addNewCost()">Add New Cost to Budget</button><br>
+      <mat-form-field appearance="outline" floatLabel="always">
+        <input matInput autocomplete="off" placeholder="Type name of item to add" id="addName">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" floatLabel="always">
+        <input matInput autocomplete="off" placeholder="Type cost of item to add" id="addCost">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" floatLabel="always">
+        <input matInput autocomplete="off" placeholder="Type color of item to add in hexadecimal" id="addColor">
+      </mat-form-field>
+    </div>
+
+
+
+
+    <br>
+    <div>
+      <button mat-raised-button (click)="removeOldCost()">Remove Old Cost from Budget</button><br>
+      <mat-form-field appearance="outline" floatLabel="always">
+        <input matInput autocomplete="off" placeholder="Type name of item to remove"  id="removeName">
+    </mat-form-field>
+    </div>
+
+
+
 
     <article>
-      <h1>Chart</h1>
+      <h1>Pie Chart</h1>
       <p>
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="myPieChart" width="400" height="400"></canvas>
+      </p>
+    </article>
+
+    <article>
+      <h1>polarArea Char</h1>
+      <p>
+        <canvas id="myPolarAreaChart" width="400" height="400"></canvas>
+      </p>
+    </article>
+
+    <article>
+      <h1>Bar Chart</h1>
+      <p>
+        <canvas id="myBarChart" width="400" height="400"></canvas>
       </p>
     </article>
   </div>
+
+
 </main>

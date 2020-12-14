@@ -1,0 +1,7 @@
+{
+  "domain": "dev-duiqzfno.us.auth0.com",
+  "clientId": "IxLf70fQm5YLbUrX80aCuv3iZaU41n5k",
+  "audience": "http://localhost:4200/login",
+  "apiUrl": "http://localhost:4200/login"
+
+}
