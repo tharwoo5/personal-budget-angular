@@ -11,7 +11,7 @@
     *ngIf="(auth.isAuthenticated$ | async) "
     ></pb-logout-button> |
 
-    <button [routerLink] = "['/homepage']" *ngIf="(auth.isAuthenticated$ | async) ">Dashboard</button> |
+    <button [routerLink] = "['/homepage']" *ngIf="(auth.isAuthenticated$ | async) ">DashBoard</button> |
 
     <label *ngIf="(auth.isAuthenticated$ | async) ">Profile</label> -
 
