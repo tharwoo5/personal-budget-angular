@@ -61,10 +61,12 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatSelectModule,
     AuthModule.forRoot({
-    ...env.auth, BrowserAnimationsModule, MatButtonModule, ReactiveFormsModule, FormsModule, MatSelectModule,
-  }),
-  AuthModule.forRoot({
     domain: 'dev-duiqzfno.us.auth0.com',
     clientId: 'IxLf70fQm5YLbUrX80aCuv3iZaU41n5k'
   }),
